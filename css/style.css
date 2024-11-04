@@ -1793,14 +1793,18 @@ textarea.form__input {
         margin-top: 32px;
     }
 
+    .solutions__item {
+        &:last-child {
+            .solutions__row {
+                padding-bottom: 0;
+            }
+        }
+    }
+
     .solutions__row {
         padding-top: 24px;
         padding-bottom: 24px;
         flex-direction: column;
-
-        &:last-child {
-            padding-bottom: 0;
-        }
     }
 
     .solutions__title {
