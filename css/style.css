@@ -1757,6 +1757,7 @@ textarea.form__input {
     }
 
     .hero__box {
+        position: static;
         width: 100%;
         max-width: 100%;
         padding: 16px;
@@ -1769,10 +1770,8 @@ textarea.form__input {
         }
     }
 
-    .hero__slider_wrapper {
-        &:not(:last-child) {
-            margin-bottom: 24px;
-        }
+    .hero__slider_wrapper:not(:last-child) {
+        margin-bottom: 24px;
     }
 
     .hero__subtitle {
@@ -1790,7 +1789,38 @@ textarea.form__input {
     }
 
     .hero .swiper-nav {
+        display: none;
+        position: absolute;
+        left: 0;
+        bottom: 16%;
         margin-top: 32px;
+        padding: 0 16px;
+    }
+
+    .hero__slider_trumbs:not(.swiper-initialized) {
+        overflow: hidden;
+
+        .swiper-wrapper {
+            display: flex;
+            align-items: center;
+        }
+
+        .swiper-slide {
+            width: 100%;
+        }
+    }
+
+    .hero__slider_img:not(.swiper-initialized) {
+        overflow: hidden;
+
+        .swiper-wrapper {
+            display: flex;
+            align-items: center;
+        }
+
+        .swiper-slide {
+            width: 100%;
+        }
     }
 
     .solutions__item {
