@@ -22,16 +22,16 @@
                     <nav class="header__nav">
                         <ul class="header__list">
                             <li class="header__item">
-                                <a class="header__link" href="#package-solutions">Пакетні рішення</a>
+                                <div class="header__link" data-id="package-solutions">Пакетні рішення</div>
                             </li>
                             <li class="header__item">
-                                <a class="header__link" href="#ready-made">Готові рішення</a>
+                                <div class="header__link" data-id="ready-made">Готові рішення</div>
                             </li>
                             <li class="header__item">
-                                <a class="header__link" href="#why-us">Чому ми?</a>
+                                <div class="header__link" data-id="why-us">Чому ми?</div>
                             </li>
                             <li class="header__item">
-                                <a class="header__link" href="#reviews">Відгуки</a>
+                                <div class="header__link" data-id="reviews">Відгуки</div>
                             </li>
                         </ul>
                     </nav>
@@ -40,12 +40,15 @@
                         <div class="info_block__icon"></div>
                         <div class="info_block__content">
                             <div class="info_block__head">Телефон</div>
-                            <a class="info_block__link" href="tel:0800301235">0 800 301235</a>
+                            <div class="info_block__text">
+                                <a href="tel:0800301235">0 800 301235</a>
+                            </div>
                         </div>
                     </div>
                     <a class="header__action" href="#">запит на співпрацю</a>
                 </div>
-                <button class="header__burger" type="button">
+                <button class="header__burger js-menu-trigger" type="button">
+                    <span></span>
                     <span></span>
                     <span></span>
                 </button>
@@ -262,12 +265,27 @@
             <div class="section text-block">
                 <div class="container">
                     <div class="decor-line"></div>
-                    <blockquote class="text-block__wrap" id="quoteText">
-                        Ми беремо на себе всі етапи реалізації проекту – від аналізу об'єкта до встановлення обладнання
-                        та
-                        подальшої підтримки
-                        створеної інфраструктури.
-                    </blockquote>
+                    <div class="text-block__wrap">
+
+                        <span class="decor-arrow">
+                            <span class="arrow-icon">
+                                <img src="img/arrow.svg" alt="arrow">
+                            </span>
+                            <span class="arrow-icon">
+                                <img src="img/arrow.svg" alt="arrow">
+                            </span>
+                            <span class="arrow-icon">
+                                <img src="img/arrow.svg" alt="arrow">
+                            </span>
+                        </span>
+                        <blockquote class="text-block__text" id="quoteText">
+                            Ми беремо на себе всі етапи реалізації проекту – від аналізу об'єкта до встановлення
+                            обладнання
+                            та
+                            подальшої підтримки
+                            створеної інфраструктури.
+                        </blockquote>
+                    </div>
                     <div class="decor-line decor-line__reverse"></div>
                 </div>
             </div>
@@ -458,7 +476,7 @@
                 </div>
             </section>
 
-            <section class="section main-from">
+            <section class="section main-form">
                 <div class="main-from__bg">
                     <img src="img/form.jpg" alt="form bg">
                     <span class="decor-cub"></span>
